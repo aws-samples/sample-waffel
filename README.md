@@ -21,36 +21,36 @@ pip3 install git+https://github.com/aws-samples/sample-waffel.git  #--break-syst
 ## Usage
 ```bash
 # Interactive mode - select from available PDFs or API
-python -m waffel
+python3 -m waffel
 ```
 
 ### PDF Input
 
 ```bash
 # Direct file specification
-python -m waffel assessment.pdf
+python3 -m waffel assessment.pdf
 
 # Custom output file
-python -m waffel assessment.pdf -o custom_report.xlsx
+python3 -m waffel assessment.pdf -o custom_report.xlsx
 
 # Generate PowerPoint presentation
-python -m waffel assessment.pdf --pptx
+python3 -m waffel assessment.pdf --pptx
 ```
 
 ### API Input
 
 ```bash
 # Interactive mode - select workload and lens
-python -m waffel --api
+python3 -m waffel --api
 
 # Specify workload ID, interactive lens selection
-python -m waffel --api -w 12345678-1234-1234-1234-123456789012
+python3 -m waffel --api -w 12345678-1234-1234-1234-123456789012
 
 # Specify both workload and lens
-python -m waffel --api -w 12345678-1234-1234-1234-123456789012 -l wellarchitected
+python3 -m waffel --api -w 12345678-1234-1234-1234-123456789012 -l wellarchitected
 
 # Generate PowerPoint from API data
-python -m waffel --api --pptx
+python3 -m waffel --api --pptx
 ```
 
 

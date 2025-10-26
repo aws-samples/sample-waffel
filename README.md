@@ -13,7 +13,7 @@ See [detailed output structure](#output-structure) below for complete format des
 ## Installation
 
 ```bash
-pip3 install git+https://github.com/aws-samples/sample-waffel.git  #--break-system-packages
+pip3 install -U git+https://github.com/aws-samples/sample-waffel.git  #--break-system-packages
 ```
 
 ## Usage

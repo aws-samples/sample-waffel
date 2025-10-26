@@ -1,6 +1,6 @@
 # Well-Architected Framework Friendly Enhanced Layout (WAFFEL)
 
-WAFFEL is a tool designed to transform AWS Well-Architected Framework data into clear, actionable insights. It supports both PDF reports and direct API access to the AWS Well-Architected Tool, reorganizing findings into an intuitive, user-friendly Excel format or executive PowerPoint presentations that highlight critical issues, prioritize recommendations, and present architectural improvements in a digestible manner.
+WAFFEL is an example that demonstrates how to transform AWS Well-Architected Framework data into clear, actionable insights. It supports both PDF reports and direct API access to the AWS Well-Architected Tool, reorganizing findings into an intuitive, user-friendly Excel format or executive PowerPoint presentations that highlight critical issues, prioritize recommendations, and present architectural improvements in a digestible manner.
 
 Whether you're presenting to stakeholders, tracking remediation progress, or conducting regular architecture reviews, WAFFEL cuts through the complexity to deliver the information that matters most—turning architectural assessments from overwhelming documentation into a strategic roadmap for cloud excellence.
 

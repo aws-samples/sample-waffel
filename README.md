@@ -4,6 +4,12 @@ WAFFEL is a tool designed to transform AWS Well-Architected Framework data into 
 
 Whether you're presenting to stakeholders, tracking remediation progress, or conducting regular architecture reviews, WAFFEL cuts through the complexity to deliver the information that matters most—turning architectural assessments from overwhelming documentation into a strategic roadmap for cloud excellence.
 
+| Input PDF | Output Excel | Output PowerPoint |
+|-------|--------|--------|
+| <img src="images/wa-pdf.png" alt="AWS Well-Architected PDF Input" width="260"> | <img src="images/output-excel-pillar.png" alt="Excel Output Example" width="300"> | <img src="images/output-pptx.png" alt="PowerPoint Output Example" width="300"> |
+
+See [detailed output structure](#output-structure) below for complete format descriptions.
+
 ## Installation
 
 ```bash

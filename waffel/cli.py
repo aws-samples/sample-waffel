@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
+"""Command-line interface for WAFFEL."""
 import argparse
 import os
 import sys
 from InquirerPy import inquirer
 from .converter import convert_to_excel, convert_to_powerpoint
-from .data_source import create_data_source
+from .factory import create_data_source
 from .data_source_api import APIDataSource
 
 def get_available_sources():
@@ -66,6 +67,7 @@ def select_source():
     return next(s for s in sources if s['display'] == selection)
 
 def main():
+    """Main CLI entry point."""
     parser = argparse.ArgumentParser(description="Convert AWS Well-Architected Framework data to Excel or PowerPoint")
     parser.add_argument("input_file", nargs="?", help="Path to PDF file (optional)")
     parser.add_argument("-o", "--output", help="Output Excel file path")

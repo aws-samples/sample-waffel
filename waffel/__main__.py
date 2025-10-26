@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Entry point for WAFFEL module execution."""
 
 from .cli import main
 

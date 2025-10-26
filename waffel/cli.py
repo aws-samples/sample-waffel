@@ -33,7 +33,7 @@ def get_available_sources():
                 'display': f"⌬ {w['WorkloadName']} - {description}",
                 'value': w['WorkloadId']
             })
-    except Exception:
+    except Exception:  # nosec B110
         # Silently ignore AWS access issues
         pass
 

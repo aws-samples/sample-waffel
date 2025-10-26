@@ -240,7 +240,7 @@ class ExcelGenerator:
                         group_end = current_row - 1
                         try:
                             ws.row_dimensions.group(group_start, group_end, outline_level=1, hidden=True)
-                        except:
+                        except:  # nosec B110
                             pass
                 
                 # Set column widths

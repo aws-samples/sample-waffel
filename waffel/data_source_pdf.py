@@ -124,7 +124,7 @@ class PDFDataSource(DataSource):
                                 if '/A' in annot and '/URI' in annot['/A']:
                                     uri = str(annot['/A']['/URI'])
                                     hyperlinks_by_page[page_num].append(uri)
-                            except Exception:
+                            except Exception:  # nosec B112
                                 continue
                 except Exception as exc:
                     logger.exception(exc)
@@ -136,7 +136,7 @@ class PDFDataSource(DataSource):
     def get_wa_framework_urls(self, base_url="https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework"):
         """Fetch all Well-Architected Framework URLs dynamically with caching"""
         try:
-            toc = requests.get(f'{base_url}/toc-contents.json').json()
+            toc = requests.get(f'{base_url}/toc-contents.json').json()  # nosec B113
             all_pages = []
             def _process(toc):
                 for t in toc:

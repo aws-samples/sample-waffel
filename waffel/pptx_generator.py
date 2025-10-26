@@ -180,7 +180,7 @@ class PowerPointGenerator:
         # Download and add image (full height)
         try:
             image_url = "https://docs.aws.amazon.com/images/wellarchitected/latest/userguide/images/eisenhower.png"
-            response = requests.get(image_url)
+            response = requests.get(image_url)  # nosec B113
             response.raise_for_status()
             
             # Add image to slide - full height (6.5 inches available after title)

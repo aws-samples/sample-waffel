@@ -137,7 +137,9 @@ class PDFDataSource(DataSource):
     def get_wa_framework_urls(self, base_url="https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework"):
         """Fetch all Well-Architected Framework URLs dynamically with caching"""
         try:
-            toc = requests.get(f'{base_url}/toc-contents.json', timeout=10).json()  # nosec B113
+            res = requests.get(f'{base_url}/toc-contents.json', timeout=10)  # nosec B113
+            res.raise_for_status()
+            toc = res.json()
             all_pages = []
             def _process(toc):
                 for t in toc:
